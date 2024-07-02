@@ -4,22 +4,18 @@
 class Fixed
 {
 private:
-    static const int _fb_value = 8;
-
-private:
-    int _value;
+    static const int _fractional_bits;
+    int              _value;
 
 public:
     Fixed();
-
     Fixed(const Fixed& other);
-
-    Fixed& operator=(const Fixed& other);
 
     ~Fixed();
 
-    int getRawBits() const;
+    Fixed& operator=(const Fixed& other);
 
+    int  getRawBits() const;
     void setRawBits(int raw);
 };
 

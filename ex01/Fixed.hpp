@@ -6,31 +6,23 @@
 class Fixed
 {
 private:
-    static const int _fb_value = 8;
-
-private:
-    int _value;
+    static const int _fractional_bits;
+    int              _value;
 
 public:
     Fixed();
-
-    explicit Fixed(int value);
-
-    explicit Fixed(float value);
-
+    Fixed(int value);
+    Fixed(float value);
     Fixed(const Fixed& other);
-
-    Fixed& operator=(const Fixed& other);
 
     ~Fixed();
 
-    int getRawBits() const;
+    Fixed& operator=(const Fixed& other);
 
-    void setRawBits(int raw);
-
+    int   toInt() const;
     float toFloat() const;
-
-    int toInt() const;
+    int   getRawBits() const;
+    void  setRawBits(int raw);
 };
 
 std::ostream& operator<<(std::ostream& stream, const Fixed& other);

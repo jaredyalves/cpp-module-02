@@ -14,3 +14,8 @@ add_executable(fixed1
         ex01/main.cpp
         ex01/Fixed.cpp
         ex01/Fixed.hpp)
+
+add_executable(fixed2
+        ex02/main.cpp
+        ex02/Fixed.cpp
+        ex02/Fixed.hpp)
