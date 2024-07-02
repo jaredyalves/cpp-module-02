@@ -9,3 +9,8 @@ add_executable(fixed0
         ex00/main.cpp
         ex00/Fixed.cpp
         ex00/Fixed.hpp)
+
+add_executable(fixed1
+        ex01/main.cpp
+        ex01/Fixed.cpp
+        ex01/Fixed.hpp)
